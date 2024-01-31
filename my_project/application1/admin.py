@@ -1,5 +1,10 @@
 from django.contrib import admin
+from .models import AnyFile
 
-from .models import Any_file
 
-admin.site.register(Any_file)
+class AnyFileDisplayOnAdminPanel(admin.ModelAdmin):
+    """Форма для админ панели"""
+    list_display = ['some_name', 'image', 'file']
+
+
+admin.site.register(AnyFile, AnyFileDisplayOnAdminPanel)
