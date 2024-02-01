@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+from config import YANDEX_ID_KEY, YANDEX_SECRET_KEY, YANDEX_BUCKET_NAME
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -34,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    # приложение которое 'слушает' запросы на удаление файлов и удаляет их
+    'django_cleanup.apps.CleanupConfig',
     'django.contrib.staticfiles',
     'application1'
 ]
@@ -120,10 +124,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# for work with yandex object storage
-AWS_ACCESS_KEY_ID = 'YCAJEOUZEh-K6ZEGu07LW_idd'
-AWS_SECRET_ACCESS_KEY = 'YCMxywk4j8iiX_iGasBpFRNJdOwirvqsknds3p1I'
-AWS_STORAGE_BUCKET_NAME = 'simple-storage'
+# ключи доступа для работы с YOS
+AWS_ACCESS_KEY_ID = YANDEX_ID_KEY
+AWS_SECRET_ACCESS_KEY = YANDEX_SECRET_KEY
+AWS_STORAGE_BUCKET_NAME = YANDEX_BUCKET_NAME
 AWS_S3_REGION_NAME = 'ru-central1'
 AWS_S3_ENDPOINT_URL = 'https://storage.yandexcloud.net'
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.storage.yandexcloud.net'

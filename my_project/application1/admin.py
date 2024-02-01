@@ -3,7 +3,7 @@ from .models import AnyFile
 
 
 class AnyFileDisplayOnAdminPanel(admin.ModelAdmin):
-    """Форма для админ панели"""
+    """Форма для админ панели (отображаемые поля)"""
     list_display = ['some_name', 'image', 'file']
 
 
