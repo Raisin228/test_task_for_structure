@@ -68,13 +68,13 @@ a tambourine. Go to admin page and try to upload your files.
 ---
 
 ### Uploading files
-<img src="">
+<img src="https://github.com/Raisin228/storing-files-in-the-yandex-cloud/blob/main/screenshots/Django%20admin%20with%20file.png">
 
-### Database after file was upload
-<img src="">
+### Database after files was upload
+<img src="https://github.com/Raisin228/storing-files-in-the-yandex-cloud/blob/main/screenshots/DB.png">
 
 ### YOS with files
-<img src="">
+<img src="https://github.com/Raisin228/storing-files-in-the-yandex-cloud/blob/main/screenshots/Files%20uploded%20to%20the%20cloud.png">
 
 
 
