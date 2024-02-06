@@ -7,12 +7,12 @@ using django admin store them files to the yandex object storage.
 
 This way very useful because it helps to avoid some problems. 
 
-For example:
+Problems that you avoid use this method:
 
-- You need spend less money to rent your server. Usually simple server cost more money to 
-store data on them then store information on the cloud.
-- Your data are located at safety because cloud provider every day work with 
-security to safe your data.
+- You will be able to spend less money to rent your server. Usually simple server cost more money so store 
+information on the cloud more profitably.
+- Your data are located more security because cloud provider every day work with his security to protect 
+your information.
 - etc...
 
 ### Run backend
@@ -42,26 +42,26 @@ security to safe your data.
 
 *Third step*
 * You need to make migrations. Go to src folder. Note you need to be in the same
-directory with manage.py and write.
+directory with manage.py and write.\
 `python mange.py migrate`
-* Create superuser.
+* Create superuser.\
 `python manage.py createsuperuser`
 
 *Forty step*
-* Run server
+* Run server\
 `python mange.py runserver`
 
 It's all!! I hope everything worked out for you and you didn't dance with 
 a tambourine. Go to admin page and try to upload your files. 
 
-### Technology stak 
+### Technology stack 
 
 ---
 
 1. [Python3](https://www.python.org/) - program language
 2. [Yandex Cloud](https://cloud.yandex.ru/ru/) - s3 analog
 3. [Django 5.0.1](https://www.djangoproject.com/) - backend framework
-4. [SQLite](https://www.sqlite.org/index.html) - database to store link by users file which are located in the cloud
+4. [SQLite](https://www.sqlite.org/index.html) - database for storing links to user files
 
 ### Project's photo
 
@@ -75,9 +75,4 @@ a tambourine. Go to admin page and try to upload your files.
 
 ### YOS with files
 <img src="https://github.com/Raisin228/storing-files-in-the-yandex-cloud/blob/main/screenshots/Files%20uploded%20to%20the%20cloud.png">
-
-
-
-
-
 
