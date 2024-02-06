@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 
 def main_page(request):
-    """Главная страница"""
+    """Main page"""
     return render(request, 'index.html')

@@ -3,8 +3,8 @@ from .models import AnyFile
 
 
 class AnyFileDisplayOnAdminPanel(admin.ModelAdmin):
-    """Форма для админ панели (отображаемые поля)"""
-    list_display = ['some_name', 'image', 'file']
+    """Form for the admin panel (displayed fields)"""
+    list_display = ['some_name', 'url_image', 'url_file']
 
 
 admin.site.register(AnyFile, AnyFileDisplayOnAdminPanel)
