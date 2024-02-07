@@ -47,7 +47,7 @@ directory with manage.py and write.\
 * Create superuser.\
 `python manage.py createsuperuser`
 
-*Forty step*
+*Fortieth step*
 * Run server\
 `python mange.py runserver`
 
